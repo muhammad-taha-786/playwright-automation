@@ -1,0 +1,13 @@
+{
+    "customer": {
+        "firstName": "Muhammad",
+        "lastName": "Taha",
+        "postalCode": "54000"
+    },
+
+    "expectedOverviewTitle": "Checkout: Overview",
+
+    "expectedConfirmation": "Thank you for your order!",
+
+    "expectedCartItemCount": 4
+}
