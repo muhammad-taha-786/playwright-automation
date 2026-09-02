@@ -2,7 +2,8 @@
     "validUsers": [
         {
             "username": "standard_user",
-            "password": "secret_sauce"
+            "password": "secret_sauce",
+            "expectedMessage": "Products"
         }
     ],
 

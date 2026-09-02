@@ -1,3 +1,5 @@
+const { test } = require('@playwright/test');
+
 class AddtoCart {
 
     constructor(page) {
@@ -11,7 +13,21 @@ class AddtoCart {
         this.cartItems = page.locator('.cart_item');
 
         // Product Names inside Cart
-        this.cartItemNames = page.locator('.cart_item .inventory_item_name');
+        this.cartItemNames = page.locator(
+            '.cart_item .inventory_item_name'
+        );
+    }
+
+
+    // Attach Screenshot
+
+    async attachScreenshot(name) {
+
+        await test.info().attach(name, {
+            body: await this.page.screenshot(),
+            contentType: 'image/png',
+        });
+
     }
 
 
@@ -28,6 +44,10 @@ class AddtoCart {
         await product
             .getByRole('button', { name: /Add to cart/i })
             .click();
+
+        await this.attachScreenshot(
+            `Product Added - ${productName}`
+        );
     }
 
 
@@ -39,6 +59,7 @@ class AddtoCart {
 
             await this.addProduct(productName);
         }
+
     }
 
 
@@ -47,6 +68,10 @@ class AddtoCart {
     async openCart() {
 
         await this.cartIcon.click();
+
+        await this.attachScreenshot(
+            'Cart Page Opened'
+        );
     }
 
 
@@ -55,14 +80,18 @@ class AddtoCart {
     async getCartItemCount() {
 
         return await this.cartItems.count();
+
     }
+
 
     // Get Cart Product Names
 
     async getCartItemNames() {
 
         return await this.cartItemNames.allTextContents();
+
     }
+
 }
 
 

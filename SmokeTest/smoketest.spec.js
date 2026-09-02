@@ -29,7 +29,7 @@ test('Smoke Test - Complete End to End Flow', async ({ page }) => {
     const logout = new Logout(page);
 
 
-    await login.gotoURL();
+    await login.gotoLoginPage();
 
 
     const loginUser = LoginData.validUsers[0];

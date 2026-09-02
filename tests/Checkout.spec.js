@@ -27,7 +27,7 @@ test('Complete Product Checkout', async ({ page }) => {
 
     const loginUser = LoginData.validUsers[0];
 
-    await login.gotoURL();
+    await login.gotoLoginPage();
 
     await login.login(
         loginUser.username,

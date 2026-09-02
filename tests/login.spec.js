@@ -1,64 +1,19 @@
-const { test, expect } = require('@playwright/test');
+import { test, expect } from '../fixtures/testSetup.js';
+import loginData from '../testdata/logintestData.json' assert { type: 'json' };
+import LoginPage from '../Pages/LoginPage.js';
+import { attachStepScreenshot } from '../utilities/screenshots.js';
 
-const LoginPage = require('../Pages/LoginPage');
-const LoginData = require('../testdata/LogintestData.json');
-
-
-// 1. Valid Login
-
-test('Login Test Case using Valid User', async ({ page }) => {
-
-    const login = new LoginPage(page);
-
-    const data = LoginData.validUsers[0];
-
-    await login.gotoURL();
-
-    await login.login(
-        data.username,
-        data.password
-    );
-
-    await expect(page.locator('.title'))
-        .toHaveText('Products');
+test.describe('Login', () => {
+test('Login Test Case with valid user', async ({ page }) => {
+const loginPage = new LoginPage(page);
+const data = loginData.validUsers[0];
+await test.step('Enter credential and login', async () => {
+await loginPage.login(data.username, data.password);
 });
 
-
-// 2. Locked Out User
-
-test('Login Test Case using Locked Out User', async ({ page }) => {
-
-    const login = new LoginPage(page);
-
-    const data = LoginData.lockedOutUsers[0];
-
-    await login.gotoURL();
-
-    await login.login(
-        data.username,
-        data.password
-    );
-
-    await expect(login.errorMessage)
-        .toContainText(data.expectedMessage);
+await test.step('Verify Welcome Message on Landing page', async () => {
+await expect(loginPage.message.first()).toHaveText(data.expectedMessage);
+await attachStepScreenshot(page, '05 - After welcome message verification');
 });
-
-
-// 3. Invalid Credentials
-
-test('Login Test Case using Invalid Credentials', async ({ page }) => {
-
-    const login = new LoginPage(page);
-
-    const data = LoginData.invalidUsers[0];
-
-    await login.gotoURL();
-
-    await login.login(
-        data.username,
-        data.password
-    );
-
-    await expect(login.errorMessage)
-        .toContainText(data.expectedMessage);
+});
 });

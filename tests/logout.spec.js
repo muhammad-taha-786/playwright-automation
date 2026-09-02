@@ -26,7 +26,7 @@ test('Logout Test Case', async ({ page }) => {
     // 1. Open SauceDemo
     // ========================================
 
-    await login.gotoURL();
+    await login.gotoLoginPage();
 
 
     // ========================================
