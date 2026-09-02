@@ -1,0 +1,6 @@
+{
+  statusCode: 401,
+  success: false,
+  message: 'Password is incorrect',
+  errors: []
+}
