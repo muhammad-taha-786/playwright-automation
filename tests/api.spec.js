@@ -1,112 +1,187 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, request } from '@playwright/test';
+import UserApi from '../Pages/UserApi.js';
+
 
 const BASE_URL = 'https://api-testing-postman.vercel.app/api/v1';
 
-let token;
+
+let apiContext;
+let userApi;
+
 let username;
 let email;
 let password = 'Test@12345';
 
+
 test.describe.serial('Users API Automation', () => {
+
+
+  // =====================================================
+  // BEFORE ALL TESTS
+  // =====================================================
+
+  test.beforeAll(async () => {
+
+    // Create API request context manually
+    apiContext = await request.newContext({
+      baseURL: BASE_URL
+    });
+
+    // Create User API POM
+    userApi = new UserApi(apiContext);
+
+  });
+
+
+  // =====================================================
+  // AFTER ALL TESTS
+  // =====================================================
+
+  test.afterAll(async () => {
+
+    // Dispose API context
+    await apiContext.dispose();
+
+  });
+
 
   // =====================================================
   // 1. REGISTER USER
-  // POST /users/register
   // =====================================================
-  test('1 - Register User', async ({ request }) => {
+
+  test('1 - Register User', async () => {
 
     const timestamp = Date.now();
 
     username = `taha${timestamp}`;
     email = `taha${timestamp}@gmail.com`;
 
-    const response = await request.post(
-      `${BASE_URL}/users/register`,
-      {
-        data: {
-          fullname: 'Muhammad Taha',
-          email: email,
-          username: username,
-          password: password
-        }
-      }
-    );
+
+    const response = await userApi.registerUser({
+
+      fullname: 'Muhammad Taha',
+
+      email: email,
+
+      username: username,
+
+      password: password
+
+    });
+
 
     const responseBody = await response.json();
 
+
     console.log('REGISTER STATUS:', response.status());
-    console.log('REGISTER RESPONSE:', responseBody);
+
+    console.log(
+      'REGISTER RESPONSE:',
+      responseBody
+    );
+
 
     expect(response.status()).toBe(201);
-    expect(responseBody.success).toBe(true);
-    expect(responseBody.message).toBe('User registered Successfully');
 
-    expect(responseBody.data.username).toBe(username);
-    expect(responseBody.data.email).toBe(email);
-    expect(responseBody.data.fullname).toBe('Muhammad Taha');
+    expect(responseBody.success).toBe(true);
+
+    expect(responseBody.message)
+      .toBe('User registered Successfully');
+
+
+    expect(responseBody.data.username)
+      .toBe(username);
+
+    expect(responseBody.data.email)
+      .toBe(email);
+
+    expect(responseBody.data.fullname)
+      .toBe('Muhammad Taha');
 
   });
 
 
   // =====================================================
   // 2. LOGIN USER
-  // POST /users/login
   // =====================================================
-  test('2 - Login User', async ({ request }) => {
 
-    const response = await request.post(
-      `${BASE_URL}/users/login`,
-      {
-        data: {
-          username: username,
-          email: email,
-          password: password
-        }
-      }
-    );
+  test('2 - Login User', async () => {
+
+    const response = await userApi.loginUser({
+
+      username: username,
+
+      email: email,
+
+      password: password
+
+    });
+
 
     const responseBody = await response.json();
 
+
     console.log('LOGIN STATUS:', response.status());
-    console.log('LOGIN SUCCESS:', responseBody.success);
-    console.log('LOGIN MESSAGE:', responseBody.message);
+
+    console.log(
+      'LOGIN SUCCESS:',
+      responseBody.success
+    );
+
+    console.log(
+      'LOGIN MESSAGE:',
+      responseBody.message
+    );
+
 
     expect(response.status()).toBe(200);
+
     expect(responseBody.success).toBe(true);
-    expect(responseBody.message).toBe('User Logged in successfully');
 
-    // Access token is inside data
-    token = responseBody.data.accessToken;
+    expect(responseBody.message)
+      .toBe('User Logged in successfully');
 
-    expect(token).toBeTruthy();
 
-    expect(responseBody.data.user.username).toBe(username);
-    expect(responseBody.data.user.email).toBe(email);
+    expect(responseBody.data.accessToken)
+      .toBeTruthy();
+
+
+    expect(responseBody.data.user.username)
+      .toBe(username);
+
+    expect(responseBody.data.user.email)
+      .toBe(email);
 
   });
 
 
   // =====================================================
   // 3. GET CURRENT USER
-  // GET /users/current-user
   // =====================================================
-  test('3 - Get Current User', async ({ request }) => {
 
-    const response = await request.get(
-      `${BASE_URL}/users/current-user`,
-      {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      }
+  test('3 - Get Current User', async () => {
+
+    const response =
+      await userApi.getCurrentUser();
+
+
+    const responseBody =
+      await response.json();
+
+
+    console.log(
+      'CURRENT USER STATUS:',
+      response.status()
     );
 
-    const responseBody = await response.json();
+    console.log(
+      'CURRENT USER RESPONSE:',
+      responseBody
+    );
 
-    console.log('CURRENT USER STATUS:', response.status());
-    console.log('CURRENT USER RESPONSE:', responseBody);
 
     expect(response.status()).toBe(200);
+
     expect(responseBody.success).toBe(true);
 
   });
@@ -114,32 +189,41 @@ test.describe.serial('Users API Automation', () => {
 
   // =====================================================
   // 4. UPDATE ACCOUNT
-  // PATCH /users/update-account
   // =====================================================
-  test('4 - Update Account', async ({ request }) => {
 
-    const updatedFullname = 'Muhammad Taha Updated';
+  test('4 - Update Account', async () => {
 
-    const response = await request.patch(
-      `${BASE_URL}/users/update-account`,
-      {
-        headers: {
-          Authorization: `Bearer ${token}`
-        },
+    const updatedFullname =
+      'Muhammad Taha Updated';
 
-        data: {
-          fullname: updatedFullname,
-          email: email
-        }
-      }
+
+    const response =
+      await userApi.updateAccount({
+
+        fullname: updatedFullname,
+
+        email: email
+
+      });
+
+
+    const responseBody =
+      await response.json();
+
+
+    console.log(
+      'UPDATE ACCOUNT STATUS:',
+      response.status()
     );
 
-    const responseBody = await response.json();
+    console.log(
+      'UPDATE ACCOUNT RESPONSE:',
+      responseBody
+    );
 
-    console.log('UPDATE ACCOUNT STATUS:', response.status());
-    console.log('UPDATE ACCOUNT RESPONSE:', responseBody);
 
     expect(response.status()).toBe(200);
+
     expect(responseBody.success).toBe(true);
 
   });
@@ -147,31 +231,39 @@ test.describe.serial('Users API Automation', () => {
 
   // =====================================================
   // 5. REPLACE ACCOUNT
-  // PUT /users/replace-account
   // =====================================================
-  test('5 - Replace Account', async ({ request }) => {
 
-    const response = await request.put(
-      `${BASE_URL}/users/replace-account`,
-      {
-        headers: {
-          Authorization: `Bearer ${token}`
-        },
+  test('5 - Replace Account', async () => {
 
-        data: {
-          fullname: 'Muhammad Taha Replace',
-          email: email,
-          username: username
-        }
-      }
+    const response =
+      await userApi.replaceAccount({
+
+        fullname: 'Muhammad Taha Replace',
+
+        email: email,
+
+        username: username
+
+      });
+
+
+    const responseBody =
+      await response.json();
+
+
+    console.log(
+      'REPLACE ACCOUNT STATUS:',
+      response.status()
     );
 
-    const responseBody = await response.json();
+    console.log(
+      'REPLACE ACCOUNT RESPONSE:',
+      responseBody
+    );
 
-    console.log('REPLACE ACCOUNT STATUS:', response.status());
-    console.log('REPLACE ACCOUNT RESPONSE:', responseBody);
 
     expect(response.status()).toBe(200);
+
     expect(responseBody.success).toBe(true);
 
   });
@@ -179,20 +271,31 @@ test.describe.serial('Users API Automation', () => {
 
   // =====================================================
   // 6. GET USER BY USERNAME
-  // GET /users/user/{username}
   // =====================================================
-  test('6 - Get User By Username', async ({ request }) => {
 
-    const response = await request.get(
-      `${BASE_URL}/users/user/${username}`
+  test('6 - Get User By Username', async () => {
+
+    const response =
+      await userApi.getUserByUsername(username);
+
+
+    const responseBody =
+      await response.json();
+
+
+    console.log(
+      'GET USER STATUS:',
+      response.status()
     );
 
-    const responseBody = await response.json();
+    console.log(
+      'GET USER RESPONSE:',
+      responseBody
+    );
 
-    console.log('GET USER STATUS:', response.status());
-    console.log('GET USER RESPONSE:', responseBody);
 
     expect(response.status()).toBe(200);
+
     expect(responseBody.success).toBe(true);
 
   });
@@ -200,25 +303,31 @@ test.describe.serial('Users API Automation', () => {
 
   // =====================================================
   // 7. GET ALL USERS
-  // GET /users/all-users
   // =====================================================
-  test('7 - Get All Users', async ({ request }) => {
 
-    const response = await request.get(
-      `${BASE_URL}/users/all-users`,
-      {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      }
+  test('7 - Get All Users', async () => {
+
+    const response =
+      await userApi.getAllUsers();
+
+
+    const responseBody =
+      await response.json();
+
+
+    console.log(
+      'ALL USERS STATUS:',
+      response.status()
     );
 
-    const responseBody = await response.json();
+    console.log(
+      'ALL USERS RESPONSE:',
+      responseBody
+    );
 
-    console.log('ALL USERS STATUS:', response.status());
-    console.log('ALL USERS RESPONSE:', responseBody);
 
     expect(response.status()).toBe(200);
+
     expect(responseBody.success).toBe(true);
 
   });
@@ -226,33 +335,43 @@ test.describe.serial('Users API Automation', () => {
 
   // =====================================================
   // 8. CHANGE PASSWORD
-  // POST /users/change-password
   // =====================================================
-  test('8 - Change Password', async ({ request }) => {
 
-    const newPassword = 'NewTest@12345';
+  test('8 - Change Password', async () => {
 
-    const response = await request.post(
-      `${BASE_URL}/users/change-password`,
-      {
-        headers: {
-          Authorization: `Bearer ${token}`
-        },
+    const newPassword =
+      'NewTest@12345';
 
-        data: {
-          oldPassword: password,
-          newPassword: newPassword
-        }
-      }
+
+    const response =
+      await userApi.changePassword({
+
+        oldPassword: password,
+
+        newPassword: newPassword
+
+      });
+
+
+    const responseBody =
+      await response.json();
+
+
+    console.log(
+      'CHANGE PASSWORD STATUS:',
+      response.status()
     );
 
-    const responseBody = await response.json();
+    console.log(
+      'CHANGE PASSWORD RESPONSE:',
+      responseBody
+    );
 
-    console.log('CHANGE PASSWORD STATUS:', response.status());
-    console.log('CHANGE PASSWORD RESPONSE:', responseBody);
 
     expect(response.status()).toBe(200);
+
     expect(responseBody.success).toBe(true);
+
 
     // Save new password
     password = newPassword;
@@ -262,25 +381,31 @@ test.describe.serial('Users API Automation', () => {
 
   // =====================================================
   // 9. LOGOUT USER
-  // POST /users/logout
   // =====================================================
-  test('9 - Logout User', async ({ request }) => {
 
-    const response = await request.post(
-      `${BASE_URL}/users/logout`,
-      {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      }
+  test('9 - Logout User', async () => {
+
+    const response =
+      await userApi.logoutUser();
+
+
+    const responseBody =
+      await response.json();
+
+
+    console.log(
+      'LOGOUT STATUS:',
+      response.status()
     );
 
-    const responseBody = await response.json();
+    console.log(
+      'LOGOUT RESPONSE:',
+      responseBody
+    );
 
-    console.log('LOGOUT STATUS:', response.status());
-    console.log('LOGOUT RESPONSE:', responseBody);
 
     expect(response.status()).toBe(200);
+
     expect(responseBody.success).toBe(true);
 
   });
@@ -288,27 +413,34 @@ test.describe.serial('Users API Automation', () => {
 
   // =====================================================
   // 10. DELETE ACCOUNT
-  // DELETE /users/delete-account
   // =====================================================
-  test('10 - Delete Account', async ({ request }) => {
 
-    const response = await request.delete(
-      `${BASE_URL}/users/delete-account`,
-      {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      }
+  test('10 - Delete Account', async () => {
+
+    const response =
+      await userApi.deleteAccount();
+
+
+    const responseBody =
+      await response.json();
+
+
+    console.log(
+      'DELETE ACCOUNT STATUS:',
+      response.status()
     );
 
-    const responseBody = await response.json();
+    console.log(
+      'DELETE ACCOUNT RESPONSE:',
+      responseBody
+    );
 
-    console.log('DELETE ACCOUNT STATUS:', response.status());
-    console.log('DELETE ACCOUNT RESPONSE:', responseBody);
 
     expect(response.status()).toBe(200);
+
     expect(responseBody.success).toBe(true);
 
   });
+
 
 });
