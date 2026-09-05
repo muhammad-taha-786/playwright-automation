@@ -1,0 +1,19 @@
+LOGIN STATUS: 200
+LOGIN RESPONSE: {
+  statusCode: 200,
+  data: {
+    user: {
+      _id: '6a97caa09d0aa30a0e50f5e1',
+      username: 'taha1788332706955',
+      email: 'taha1788332706955@gmail.com',
+      fullname: 'Muhammad Taha',
+      createdAt: '2026-09-02T07:05:04.904Z',
+      updatedAt: '2026-09-02T07:05:06.444Z',
+      __v: 0
+    },
+    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTk3Y2FhMDlkMGFhMzBhMGU1MGY1ZTEiLCJlbWFpbCI6InRhaGExNzg4MzMyNzA2OTU1QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiTXVoYW1tYWQgVGFoYSIsImlhdCI6MTc4ODMzMjcwNiwiZXhwIjoxNzg4NDE5MTA2fQ.jfw3ZPYSGLIu_opAxxgYMvhNGokDok_9108HjU7Q64g',
+    refreshToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTk3Y2FhMDlkMGFhMzBhMGU1MGY1ZTEiLCJlbWFpbCI6InRhaGExNzg4MzMyNzA2OTU1QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiTXVoYW1tYWQgVGFoYSIsImlhdCI6MTc4ODMzMjcwNiwiZXhwIjoxNzg5MTk2NzA2fQ.GIXE1wBMGNMlP8l9Bm8UcsnaEObQ-K0GXYL6Rbk24wI'
+  },
+  message: 'User Logged in successfully',
+  success: true
+}

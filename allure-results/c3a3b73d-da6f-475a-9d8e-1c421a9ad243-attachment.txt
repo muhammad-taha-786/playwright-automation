@@ -1,0 +1,918 @@
+ALL USERS STATUS: 200
+ALL USERS RESPONSE: {
+  statusCode: 200,
+  data: [
+    {
+      _id: '69f41f4e2b8eb4b60ec7afe0',
+      username: 'hellowww',
+      email: 'abdulwasay013@gmail.com',
+      fullname: 'Abdul Wasay',
+      avatar: 'http://res.cloudinary.com/dx1nivd8n/image/upload/v1777605547/Screenshot_2026-04-16_220105.png',
+      coverImage: 'http://res.cloudinary.com/dx1nivd8n/image/upload/v1777605547/Screenshot_2026-04-16_220105.png',
+      watchHistory: [],
+      createdAt: '2026-05-01T03:34:38.503Z',
+      updatedAt: '2026-05-01T03:34:38.503Z',
+      __v: 0
+    },
+    {
+      _id: '69f490be260e9e72e45eb32f',
+      username: '12345678',
+      email: 'sakjfb@gmail.com',
+      fullname: 'adddddddddddc',
+      avatar: 'http://res.cloudinary.com/dx1nivd8n/image/upload/v1777635352/Screenshot_2026-04-16_220216.png',
+      coverImage: 'http://res.cloudinary.com/dx1nivd8n/image/upload/v1777635352/Screenshot_2026-04-16_220216.png',
+      watchHistory: [],
+      createdAt: '2026-05-01T11:38:38.428Z',
+      updatedAt: '2026-05-01T11:38:38.428Z',
+      __v: 0
+    },
+    {
+      _id: '6a015462b802b9f488cb5c2a',
+      username: 'abdulwasay0247',
+      email: 'abdulwasay0247@gmail.com',
+      fullname: 'abdulwasay',
+      avatar: 'http://res.cloudinary.com/dx1nivd8n/image/upload/v1777634929/Screenshot_2026-04-16_215436.png',
+      coverImage: 'http://res.cloudinary.com/dx1nivd8n/image/upload/v1777634929/Screenshot_2026-04-16_215436.png',
+      watchHistory: [],
+      createdAt: '2026-05-11T04:00:34.698Z',
+      updatedAt: '2026-05-11T04:09:41.554Z',
+      __v: 0
+    },
+    {
+      _id: '6a9024f333497f031345a5e9',
+      username: 'abdulwasay012',
+      email: 'test@example.com',
+      fullname: 'Abdul Wasay',
+      createdAt: '2026-08-27T11:52:19.346Z',
+      updatedAt: '2026-08-27T11:52:19.346Z',
+      __v: 0
+    },
+    {
+      _id: '6a91699832018ac4741b373d',
+      username: 'abdulwasay0123',
+      email: 'testwasay@example.com',
+      fullname: 'Abdul aasay',
+      createdAt: '2026-08-28T10:57:28.241Z',
+      updatedAt: '2026-08-28T10:57:28.241Z',
+      __v: 0
+    },
+    {
+      _id: '6a916e1e32018ac4741b373e',
+      username: 'waleed123',
+      email: 'waleed@gmail',
+      fullname: 'waleed',
+      createdAt: '2026-08-28T11:16:46.950Z',
+      updatedAt: '2026-08-28T11:16:46.950Z',
+      __v: 0
+    },
+    {
+      _id: '6a916e6532018ac4741b373f',
+      username: 'asim123',
+      email: 'asim@gmail',
+      fullname: 'asim',
+      createdAt: '2026-08-28T11:17:57.560Z',
+      updatedAt: '2026-08-28T11:17:57.560Z',
+      __v: 0
+    },
+    {
+      _id: '6a93fc1e059cfa3c7211dfb7',
+      username: 'asim987654321',
+      email: 'asim987654321@example.com',
+      fullname: 'Asim Ali',
+      createdAt: '2026-08-30T09:47:10.320Z',
+      updatedAt: '2026-08-30T09:47:10.320Z',
+      __v: 0
+    },
+    {
+      _id: '6a9489a3edf83eb0b7062da3',
+      username: 'abdulwasay999',
+      email: 'test888@example.com',
+      fullname: 'Abdul Wasay',
+      createdAt: '2026-08-30T19:50:59.259Z',
+      updatedAt: '2026-08-30T19:50:59.259Z',
+      __v: 0
+    },
+    {
+      _id: '6a94e8c2193dfee8b6360533',
+      username: 'abdulwasay9990',
+      email: 'test8888@example.com',
+      fullname: 'Abdul Wasay',
+      createdAt: '2026-08-31T02:36:50.115Z',
+      updatedAt: '2026-08-31T02:36:50.115Z',
+      __v: 0
+    },
+    {
+      _id: '6a951746271aa3474a4973b1',
+      username: 'yogeshkumar',
+      email: 'yogeshkumar@gmail.com',
+      fullname: 'yogeshkumar',
+      createdAt: '2026-08-31T05:55:18.086Z',
+      updatedAt: '2026-08-31T06:02:09.952Z',
+      __v: 0
+    },
+    {
+      _id: '6a951764271aa3474a4973b2',
+      username: 'tehreem07',
+      email: 'tehreem@gmail.com',
+      fullname: 'Tehreem Nasir',
+      createdAt: '2026-08-31T05:55:48.592Z',
+      updatedAt: '2026-08-31T06:02:03.209Z',
+      __v: 0
+    },
+    {
+      _id: '6a951835271aa3474a4973b4',
+      username: 'khan123',
+      email: 'ikyz2@gmail.com',
+      fullname: 'ismail1',
+      createdAt: '2026-08-31T05:59:17.271Z',
+      updatedAt: '2026-08-31T05:59:17.271Z',
+      __v: 0
+    },
+    {
+      _id: '6a951839271aa3474a4973b5',
+      username: 'asimali01234',
+      email: 'asimali1234@gmail.com',
+      fullname: 'Asim Ali',
+      createdAt: '2026-08-31T05:59:21.251Z',
+      updatedAt: '2026-08-31T05:59:21.251Z',
+      __v: 0
+    },
+    {
+      _id: '6a9518da271aa3474a4973b6',
+      username: 'haris',
+      email: 'haris@maju.com',
+      fullname: 'haris',
+      createdAt: '2026-08-31T06:02:02.085Z',
+      updatedAt: '2026-08-31T06:02:02.085Z',
+      __v: 0
+    },
+    {
+      _id: '6a95193c271aa3474a4973b8',
+      username: 'haris12',
+      email: 'haris2026@maju.com',
+      fullname: 'HarisTester',
+      createdAt: '2026-08-31T06:03:40.836Z',
+      updatedAt: '2026-08-31T06:03:40.836Z',
+      __v: 0
+    },
+    {
+      _id: '6a951941271aa3474a4973b9',
+      username: 'ameerhamza',
+      email: 'ameerhamza@gmail.com',
+      fullname: 'AmeerHamza',
+      createdAt: '2026-08-31T06:03:45.200Z',
+      updatedAt: '2026-08-31T06:03:45.200Z',
+      __v: 0
+    },
+    {
+      _id: '6a95195a271aa3474a4973bb',
+      username: 'nain ahuja',
+      email: 'nain@maju.com',
+      fullname: 'Nain',
+      createdAt: '2026-08-31T06:04:10.009Z',
+      updatedAt: '2026-08-31T06:04:10.009Z',
+      __v: 0
+    },
+    {
+      _id: '6a9519f4271aa3474a4973bd',
+      username: 'sameer123jawed',
+      email: 'samee123r@gmail.com',
+      fullname: 'Sameer',
+      createdAt: '2026-08-31T06:06:44.749Z',
+      updatedAt: '2026-08-31T06:06:44.749Z',
+      __v: 0
+    },
+    {
+      _id: '6a951a9d271aa3474a4973bf',
+      username: 'khan1234',
+      email: 'ikyz@gmail.com',
+      fullname: 'ismail',
+      createdAt: '2026-08-31T06:09:33.978Z',
+      updatedAt: '2026-08-31T06:09:33.978Z',
+      __v: 0
+    },
+    {
+      _id: '6a951ae9271aa3474a4973c0',
+      username: 'yogi',
+      email: 'yogi@gmail.com',
+      fullname: 'yogi',
+      createdAt: '2026-08-31T06:10:49.172Z',
+      updatedAt: '2026-08-31T06:10:49.172Z',
+      __v: 0
+    },
+    {
+      _id: '6a951aef271aa3474a4973c1',
+      username: 'abc123',
+      email: 'abc@maju.com',
+      fullname: 'abc',
+      createdAt: '2026-08-31T06:10:55.063Z',
+      updatedAt: '2026-08-31T06:10:55.063Z',
+      __v: 0
+    },
+    {
+      _id: '6a951b37271aa3474a4973c2',
+      username: 'nain12345',
+      email: 'nain123@maju.com',
+      fullname: 'Nain123',
+      createdAt: '2026-08-31T06:12:07.030Z',
+      updatedAt: '2026-08-31T06:12:07.030Z',
+      __v: 0
+    },
+    {
+      _id: '6a951bfe271aa3474a4973c5',
+      username: 'alirmangi123',
+      email: 'aliraza@gmail.com',
+      fullname: 'ali raza mangi',
+      createdAt: '2026-08-31T06:15:26.921Z',
+      updatedAt: '2026-08-31T06:15:26.921Z',
+      __v: 0
+    },
+    {
+      _id: '6a9522471c1ac490997bb7e7',
+      username: 'tamatar',
+      email: 'pyaaz',
+      fullname: 'aalu',
+      createdAt: '2026-08-31T06:42:15.876Z',
+      updatedAt: '2026-08-31T06:42:15.876Z',
+      __v: 0
+    },
+    {
+      _id: '6a9522d71c1ac490997bb7e8',
+      username: 'khan1234567',
+      email: 'ikyz123@gmail.com',
+      fullname: 'Ismailkhan',
+      createdAt: '2026-08-31T06:44:39.368Z',
+      updatedAt: '2026-08-31T06:44:39.368Z',
+      __v: 0
+    },
+    {
+      _id: '6a9522f11c1ac490997bb7ea',
+      username: 'ali',
+      email: 'ali@gmail.com',
+      fullname: 'Ali',
+      createdAt: '2026-08-31T06:45:05.586Z',
+      updatedAt: '2026-08-31T06:48:09.112Z',
+      __v: 0
+    },
+    {
+      _id: '6a9523a01c1ac490997bb7eb',
+      username: 'nainahuja01234',
+      email: 'nainahuja@gmail.com',
+      fullname: 'Nain Ahuja1',
+      createdAt: '2026-08-31T06:48:00.549Z',
+      updatedAt: '2026-08-31T06:48:00.549Z',
+      __v: 0
+    },
+    {
+      _id: '6a9524471c1ac490997bb7ec',
+      username: 'dogesh07',
+      email: 'dogesh@gmail.com',
+      fullname: 'Dogesh Kumar',
+      createdAt: '2026-08-31T06:50:47.238Z',
+      updatedAt: '2026-08-31T06:53:24.560Z',
+      __v: 0
+    },
+    {
+      _id: '6a9524851c1ac490997bb7ed',
+      username: 'waleedqa',
+      email: 'testing@gmail.com',
+      fullname: 'Waleed-testing QA',
+      createdAt: '2026-08-31T06:51:49.104Z',
+      updatedAt: '2026-08-31T06:51:49.104Z',
+      __v: 0
+    },
+    {
+      _id: '6a9525431c1ac490997bb7ee',
+      username: 'nainahuja',
+      email: 'nain123@gmail.com',
+      fullname: 'Nain123',
+      createdAt: '2026-08-31T06:54:59.553Z',
+      updatedAt: '2026-08-31T07:00:21.262Z',
+      __v: 0
+    },
+    {
+      _id: '6a9526161c1ac490997bb7ef',
+      username: 'ameer',
+      email: 'ameer@gmail.com',
+      fullname: 'ameer',
+      createdAt: '2026-08-31T06:58:30.886Z',
+      updatedAt: '2026-09-01T21:46:40.807Z',
+      __v: 0
+    },
+    {
+      _id: '6a9526401c1ac490997bb7f0',
+      username: 'nain987654321',
+      email: 'nain987654321@example.com',
+      fullname: 'Nain Ahuja',
+      createdAt: '2026-08-31T06:59:12.521Z',
+      updatedAt: '2026-08-31T06:59:12.521Z',
+      __v: 0
+    },
+    {
+      _id: '6a9527ce1c1ac490997bb7f2',
+      username: 'asimali_updated',
+      email: 'asimali_updated@gmail.com',
+      fullname: 'Asim Ali Updated',
+      createdAt: '2026-08-31T07:05:50.312Z',
+      updatedAt: '2026-08-31T07:29:26.421Z',
+      __v: 0
+    },
+    {
+      _id: '6a952ca74695ae7322e416cd',
+      username: 'hania',
+      email: 'hania@gmai.com',
+      fullname: 'hania',
+      createdAt: '2026-08-31T07:26:31.611Z',
+      updatedAt: '2026-08-31T07:37:39.174Z',
+      __v: 0
+    },
+    {
+      _id: '6a952dfd4695ae7322e416ce',
+      username: 'string1',
+      email: 'string1',
+      fullname: 'string1',
+      createdAt: '2026-08-31T07:32:13.881Z',
+      updatedAt: '2026-08-31T07:34:45.856Z',
+      __v: 0
+    },
+    {
+      _id: '6a952fdcc6349bb44fd16797',
+      username: 'taha1',
+      email: 'tsyed6804@gmail.com',
+      fullname: 'taha',
+      createdAt: '2026-08-31T07:40:12.014Z',
+      updatedAt: '2026-09-02T06:37:31.699Z',
+      __v: 0
+    },
+    {
+      _id: '6a953221c6349bb44fd1679a',
+      username: 'string11',
+      email: 'string11',
+      fullname: 'string11',
+      createdAt: '2026-08-31T07:49:53.679Z',
+      updatedAt: '2026-08-31T07:49:53.679Z',
+      __v: 0
+    },
+    {
+      _id: '6a9532a1c6349bb44fd1679b',
+      username: 'hamza',
+      email: 'hamza@gmail.com',
+      fullname: 'hamza',
+      createdAt: '2026-08-31T07:52:01.347Z',
+      updatedAt: '2026-08-31T08:09:30.943Z',
+      __v: 0
+    },
+    {
+      _id: '6a9533951c370d78b3548960',
+      username: 'filza1',
+      email: 'filza@11',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T07:56:05.365Z',
+      updatedAt: '2026-08-31T07:56:05.365Z',
+      __v: 0
+    },
+    {
+      _id: '6a9534294949be028b5484a9',
+      username: 'string11_1788163113163',
+      email: 'string_1788163113163@11.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T07:58:33.498Z',
+      updatedAt: '2026-08-31T07:58:33.498Z',
+      __v: 0
+    },
+    {
+      _id: '6a9534291c370d78b3548961',
+      username: 'string11_1788163113171',
+      email: 'string_1788163113171@11.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T07:58:33.503Z',
+      updatedAt: '2026-08-31T07:58:33.503Z',
+      __v: 0
+    },
+    {
+      _id: '6a9534291c1ac490997bb7f8',
+      username: 'string11_1788163113169',
+      email: 'string_1788163113169@11.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T07:58:33.505Z',
+      updatedAt: '2026-08-31T07:58:33.505Z',
+      __v: 0
+    },
+    {
+      _id: '6a9534341c370d78b3548962',
+      username: 'hamza123',
+      email: 'hamza123@gmail.com',
+      fullname: 'hamza',
+      createdAt: '2026-08-31T07:58:44.217Z',
+      updatedAt: '2026-08-31T08:08:48.026Z',
+      __v: 0
+    },
+    {
+      _id: '6a9534b41c1ac490997bb7fb',
+      username: 'string10001_',
+      email: 'string_10001.com',
+      fullname: 'FILZA10001',
+      createdAt: '2026-08-31T08:00:52.916Z',
+      updatedAt: '2026-08-31T08:00:52.916Z',
+      __v: 0
+    },
+    {
+      _id: '6a9535161c370d78b3548963',
+      username: 'string109979001_',
+      email: 'never_1099791.com',
+      fullname: 'FILZA10001',
+      createdAt: '2026-08-31T08:02:30.142Z',
+      updatedAt: '2026-08-31T08:02:30.142Z',
+      __v: 0
+    },
+    {
+      _id: '6a9535691c1ac490997bb800',
+      username: 'string11_1788163433551',
+      email: 'string_1788163433551@11.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T08:03:53.912Z',
+      updatedAt: '2026-08-31T08:03:53.912Z',
+      __v: 0
+    },
+    {
+      _id: '6a9535811c370d78b3548964',
+      username: 'string11_1788163457509',
+      email: 'string_1788163457509@11.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T08:04:17.849Z',
+      updatedAt: '2026-08-31T08:04:17.849Z',
+      __v: 0
+    },
+    {
+      _id: '6a9535814949be028b5484ad',
+      username: 'string11_1788163457512',
+      email: 'string_1788163457512@11.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T08:04:17.858Z',
+      updatedAt: '2026-08-31T08:04:17.858Z',
+      __v: 0
+    },
+    {
+      _id: '6a9535811c1ac490997bb801',
+      username: 'string11_1788163457523',
+      email: 'string_1788163457523@11.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T08:04:17.871Z',
+      updatedAt: '2026-08-31T08:04:17.871Z',
+      __v: 0
+    },
+    {
+      _id: '6a9537011c1ac490997bb802',
+      username: 'cat',
+      email: 'cat@gmail.com',
+      fullname: 'cat',
+      createdAt: '2026-08-31T08:10:41.571Z',
+      updatedAt: '2026-08-31T08:10:41.571Z',
+      __v: 0
+    },
+    {
+      _id: '6a95376c4949be028b5484af',
+      username: 'cat0',
+      email: 'cat0@gmail.com',
+      fullname: 'cat0',
+      createdAt: '2026-08-31T08:12:28.143Z',
+      updatedAt: '2026-08-31T08:12:28.143Z',
+      __v: 0
+    },
+    {
+      _id: '6a9538c71c370d78b3548968',
+      username: 'cat02',
+      email: 'cat02@gmail.com',
+      fullname: 'cat01',
+      createdAt: '2026-08-31T08:18:15.349Z',
+      updatedAt: '2026-08-31T08:18:15.349Z',
+      __v: 0
+    },
+    {
+      _id: '6a95390e4949be028b5484b2',
+      username: 'cat03',
+      email: 'cat03@gmail.com',
+      fullname: 'cat03',
+      createdAt: '2026-08-31T08:19:26.420Z',
+      updatedAt: '2026-08-31T08:19:26.420Z',
+      __v: 0
+    },
+    {
+      _id: '6a9539b34949be028b5484b3',
+      username: 'cat04',
+      email: 'cat04@gmail.com',
+      fullname: 'cat04',
+      createdAt: '2026-08-31T08:22:11.251Z',
+      updatedAt: '2026-08-31T08:22:11.251Z',
+      __v: 0
+    },
+    {
+      _id: '6a953ade1c1ac490997bb807',
+      username: 'shurta',
+      email: 'shurta@gmail.com',
+      fullname: 'shurta',
+      createdAt: '2026-08-31T08:27:10.427Z',
+      updatedAt: '2026-08-31T08:44:16.725Z',
+      __v: 0
+    },
+    {
+      _id: '6a953db20c992f57df5a8c27',
+      username: 'waleed_sqa_updated',
+      email: '824waleed@gmail.com',
+      fullname: 'waleedsqa',
+      createdAt: '2026-08-31T08:39:14.277Z',
+      updatedAt: '2026-09-04T07:08:48.205Z',
+      __v: 0
+    },
+    {
+      _id: '6a9545939fe10217ab440e54',
+      username: 'string11_1788167569122',
+      email: 'string_1788167569122@11.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:12:51.753Z',
+      updatedAt: '2026-08-31T09:12:51.753Z',
+      __v: 0
+    },
+    {
+      _id: '6a9546e9c32ce1ce05b415cf',
+      username: 'filza_1788167913129',
+      email: 'filza_1788167913129@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:18:33.474Z',
+      updatedAt: '2026-08-31T09:18:33.474Z',
+      __v: 0
+    },
+    {
+      _id: '6a9546e9c32ce1ce05b415d0',
+      username: 'filza_1788167913161',
+      email: 'filza_1788167913161@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:18:33.514Z',
+      updatedAt: '2026-08-31T09:18:33.514Z',
+      __v: 0
+    },
+    {
+      _id: '6a954760fb4a7206d193b6c5',
+      username: 'filza_updated_1788168040767',
+      email: 'filza_updated_1788168040767@test.com',
+      fullname: 'FILZA UPDATED',
+      createdAt: '2026-08-31T09:20:32.374Z',
+      updatedAt: '2026-08-31T09:20:41.110Z',
+      __v: 0
+    },
+    {
+      _id: '6a954766fb4a7206d193b6c6',
+      username: 'filza_1788168038610',
+      email: 'filza_1788168038610@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:20:38.952Z',
+      updatedAt: '2026-08-31T09:20:38.952Z',
+      __v: 0
+    },
+    {
+      _id: '6a954767fb4a7206d193b6c7',
+      username: 'filza_1788168038683',
+      email: 'filza_1788168038683@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:20:39.044Z',
+      updatedAt: '2026-08-31T09:20:39.044Z',
+      __v: 0
+    },
+    {
+      _id: '6a954768fb4a7206d193b6c8',
+      username: 'filza_1788168039714',
+      email: 'filza_1788168039714@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:20:40.061Z',
+      updatedAt: '2026-08-31T09:20:40.061Z',
+      __v: 0
+    },
+    {
+      _id: '6a9548b0fb4a7206d193b6c9',
+      username: 'filza_updated_1788168369593',
+      email: 'filza_updated_1788168369593@test.com',
+      fullname: 'FILZA UPDATED',
+      createdAt: '2026-08-31T09:26:08.184Z',
+      updatedAt: '2026-08-31T09:26:09.944Z',
+      __v: 0
+    },
+    {
+      _id: '6a9548b1c32ce1ce05b415d1',
+      username: 'filza_1788168369551',
+      email: 'filza_1788168369551@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:26:09.913Z',
+      updatedAt: '2026-08-31T09:26:09.913Z',
+      __v: 0
+    },
+    {
+      _id: '6a9548b1aba247f76574875b',
+      username: 'filza_1788168369544',
+      email: 'filza_1788168369544@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:26:09.905Z',
+      updatedAt: '2026-08-31T09:26:09.905Z',
+      __v: 0
+    },
+    {
+      _id: '6a9548b1aba247f76574875c',
+      username: 'filza_1788168369559',
+      email: 'filza_1788168369559@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:26:09.914Z',
+      updatedAt: '2026-08-31T09:26:09.914Z',
+      __v: 0
+    },
+    {
+      _id: '6a9548cec32ce1ce05b415d2',
+      username: 'filza_updated_1788168416329',
+      email: 'filza_updated_1788168416329@test.com',
+      fullname: 'FILZA UPDATED',
+      createdAt: '2026-08-31T09:26:38.107Z',
+      updatedAt: '2026-08-31T09:26:56.691Z',
+      __v: 0
+    },
+    {
+      _id: '6a9548e0c32ce1ce05b415d3',
+      username: 'filza_1788168416354',
+      email: 'filza_1788168416354@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:26:56.688Z',
+      updatedAt: '2026-08-31T09:26:56.688Z',
+      __v: 0
+    },
+    {
+      _id: '6a9548e0bea7f238afc36d87',
+      username: 'filza_1788168416347',
+      email: 'filza_1788168416347@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:26:56.701Z',
+      updatedAt: '2026-08-31T09:26:56.701Z',
+      __v: 0
+    },
+    {
+      _id: '6a9548e0aba247f76574875d',
+      username: 'filza_1788168416434',
+      email: 'filza_1788168416434@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:26:56.789Z',
+      updatedAt: '2026-08-31T09:26:56.789Z',
+      __v: 0
+    },
+    {
+      _id: '6a9549397742fc5d5d7f9b82',
+      username: 'string',
+      email: 'string',
+      fullname: 'string',
+      createdAt: '2026-08-31T09:28:25.603Z',
+      updatedAt: '2026-09-01T16:15:45.824Z',
+      __v: 0
+    },
+    {
+      _id: '6a9549537742fc5d5d7f9b83',
+      username: 'filza_1788168531599',
+      email: 'filza_1788168531599@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:28:51.930Z',
+      updatedAt: '2026-08-31T09:28:51.930Z',
+      __v: 0
+    },
+    {
+      _id: '6a954953aba247f76574875e',
+      username: 'filza_1788168531606',
+      email: 'filza_1788168531606@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:28:51.963Z',
+      updatedAt: '2026-08-31T09:28:51.963Z',
+      __v: 0
+    },
+    {
+      _id: '6a9549537742fc5d5d7f9b84',
+      username: 'filza_1788168531642',
+      email: 'filza_1788168531642@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:28:51.985Z',
+      updatedAt: '2026-08-31T09:28:51.985Z',
+      __v: 0
+    },
+    {
+      _id: '6a95496c7742fc5d5d7f9b85',
+      username: 'filza_1788168555786',
+      email: 'filza_1788168555786@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:29:16.115Z',
+      updatedAt: '2026-08-31T09:29:16.115Z',
+      __v: 0
+    },
+    {
+      _id: '6a95496caba247f76574875f',
+      username: 'filza_1788168555772',
+      email: 'filza_1788168555772@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:29:16.130Z',
+      updatedAt: '2026-08-31T09:29:16.130Z',
+      __v: 0
+    },
+    {
+      _id: '6a95496caba247f765748760',
+      username: 'filza_1788168555811',
+      email: 'filza_1788168555811@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:29:16.169Z',
+      updatedAt: '2026-08-31T09:29:16.169Z',
+      __v: 0
+    },
+    {
+      _id: '6a954ad26673918f4ab2156c',
+      username: 'filza_1788168911487',
+      email: 'filza_1788168911487@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:35:14.285Z',
+      updatedAt: '2026-08-31T09:35:14.285Z',
+      __v: 0
+    },
+    {
+      _id: '6a954ad16673918f4ab2156b',
+      username: 'filza_1788168911575',
+      email: 'filza_1788168911575@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:35:13.895Z',
+      updatedAt: '2026-08-31T09:35:13.895Z',
+      __v: 0
+    },
+    {
+      _id: '6a954ad36673918f4ab2156d',
+      username: 'filza_1788168915131',
+      email: 'filza_1788168915131@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:35:15.457Z',
+      updatedAt: '2026-08-31T09:35:15.457Z',
+      __v: 0
+    },
+    {
+      _id: '6a954ae62ff1d9791dcef202',
+      username: 'filza_1788168932679',
+      email: 'filza_1788168932679@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:35:34.829Z',
+      updatedAt: '2026-08-31T09:35:34.829Z',
+      __v: 0
+    },
+    {
+      _id: '6a954ae72ff1d9791dcef203',
+      username: 'filza_1788168932635',
+      email: 'filza_1788168932635@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:35:35.506Z',
+      updatedAt: '2026-08-31T09:35:35.506Z',
+      __v: 0
+    },
+    {
+      _id: '6a954aea2ff1d9791dcef204',
+      username: 'filza_1788168937722',
+      email: 'filza_1788168937722@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:35:38.049Z',
+      updatedAt: '2026-08-31T09:35:38.049Z',
+      __v: 0
+    },
+    {
+      _id: '6a954b316673918f4ab2156e',
+      username: 'filza_1788169009082',
+      email: 'filza_1788169009082@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:36:49.442Z',
+      updatedAt: '2026-08-31T09:36:49.442Z',
+      __v: 0
+    },
+    {
+      _id: '6a954b318a983e6b654541cb',
+      username: 'filza_1788169009186',
+      email: 'filza_1788169009186@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:36:49.512Z',
+      updatedAt: '2026-08-31T09:36:49.512Z',
+      __v: 0
+    },
+    {
+      _id: '6a954b33bea7f238afc36d88',
+      username: 'filza_1788169011324',
+      email: 'filza_1788169011324@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:36:51.659Z',
+      updatedAt: '2026-08-31T09:36:51.659Z',
+      __v: 0
+    },
+    {
+      _id: '6a954cc31275c4c7f30aa8d7',
+      username: 'filza_1788169411296',
+      email: 'filza_1788169411296@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:43:31.639Z',
+      updatedAt: '2026-08-31T09:43:31.639Z',
+      __v: 0
+    },
+    {
+      _id: '6a954cc31275c4c7f30aa8d8',
+      username: 'filza_1788169411426',
+      email: 'filza_1788169411426@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:43:31.783Z',
+      updatedAt: '2026-08-31T09:43:31.783Z',
+      __v: 0
+    },
+    {
+      _id: '6a954cc41275c4c7f30aa8d9',
+      username: 'filza_1788169412408',
+      email: 'filza_1788169412408@test.com',
+      fullname: 'FILZA',
+      createdAt: '2026-08-31T09:43:32.758Z',
+      updatedAt: '2026-08-31T09:43:32.758Z',
+      __v: 0
+    },
+    {
+      _id: '6a969ae2c0d862c08cdedceb',
+      username: 'hamzadsv123',
+      email: 'cat@example.com',
+      fullname: 'cat',
+      createdAt: '2026-09-01T09:29:06.304Z',
+      updatedAt: '2026-09-01T15:42:53.592Z',
+      __v: 0
+    },
+    {
+      _id: '6a96d75c862ed9f58462c638',
+      username: 'asimali_1788270427086',
+      email: 'asimali_1788270427086@gmail.com',
+      fullname: 'Asim Ali',
+      createdAt: '2026-09-01T13:47:08.442Z',
+      updatedAt: '2026-09-01T13:47:08.442Z',
+      __v: 0
+    },
+    {
+      _id: '6a96ea7f870ca67fdbc9a316',
+      username: 'ameer_hamza-1',
+      email: 'ameerhamza_1@gmail.com',
+      fullname: 'Ameer Hamza_1',
+      createdAt: '2026-09-01T15:08:47.387Z',
+      updatedAt: '2026-09-01T15:08:47.387Z',
+      __v: 0
+    },
+    {
+      _id: '6a96f024870ca67fdbc9a318',
+      username: 'hania_1788276769842',
+      email: 'hania1788276769842@gmail.com',
+      fullname: 'Hania',
+      createdAt: '2026-09-01T15:32:52.467Z',
+      updatedAt: '2026-09-01T15:32:52.467Z',
+      __v: 0
+    },
+    {
+      _id: '6a97b0bc99dfe23152055b41',
+      username: 'hania_1788326075502',
+      email: 'hania1788326075502@gmail.com',
+      fullname: 'Hania',
+      createdAt: '2026-09-02T05:14:36.127Z',
+      updatedAt: '2026-09-02T05:14:36.127Z',
+      __v: 0
+    },
+    {
+      _id: '6a97b1bd99dfe23152055b42',
+      username: 'test_wc3ngrvi',
+      email: 'test_wc3ngrvi@example.com',
+      fullname: 'Test User',
+      createdAt: '2026-09-02T05:18:53.314Z',
+      updatedAt: '2026-09-02T05:18:57.090Z',
+      __v: 0
+    },
+    {
+      _id: '6a97b1c02b871df3aacc2bdb',
+      username: 'test_cvq6jcds',
+      email: 'test_cvq6jcds@example.com',
+      fullname: 'Test User',
+      createdAt: '2026-09-02T05:18:56.809Z',
+      updatedAt: '2026-09-02T05:18:58.148Z',
+      __v: 0
+    },
+    {
+      _id: '6a97b1c42b871df3aacc2bdc',
+      username: 'test_zzonn59g',
+      email: 'test_zzonn59g@example.com',
+      fullname: 'Test User',
+      createdAt: '2026-09-02T05:19:00.168Z',
+      updatedAt: '2026-09-02T05:19:01.545Z',
+      __v: 0
+    },
+    {
+      _id: '6a97b2602b871df3aacc2bdd',
+      username: 'test_4j9umil6',
+      email: 'test_4j9umil6@example.com',
+      fullname: 'Test',
+      createdAt: '2026-09-02T05:21:36.270Z',
+      updatedAt: '2026-09-02T05:21:37.501Z',
+      __v: 0
+    },
+    ... 381 more items
+  ],
+  message: 'All users fetched successfully',
+  success: true
+}

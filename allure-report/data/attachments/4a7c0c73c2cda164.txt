@@ -1,0 +1,16 @@
+REPLACE ACCOUNT STATUS: 200
+REPLACE ACCOUNT RESPONSE: {
+  statusCode: 200,
+  data: {
+    _id: '6a9a73be34868b111454c44d',
+    username: 'taha1788507072274',
+    email: 'taha1788507072274@gmail.com',
+    fullname: 'Muhammad Taha Replace',
+    createdAt: '2026-09-04T07:31:10.256Z',
+    updatedAt: '2026-09-04T07:31:13.968Z',
+    __v: 0,
+    refreshToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTlhNzNiZTM0ODY4YjExMTQ1NGM0NGQiLCJlbWFpbCI6InRhaGExNzg4NTA3MDcyMjc0QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiTXVoYW1tYWQgVGFoYSIsImlhdCI6MTc4ODUwNzA3MSwiZXhwIjoxNzg5MzcxMDcxfQ.x53ov9ox-DL_YejleWccdZJa1d37WQksjQ5GyZsOIGE'
+  },
+  message: 'User details replaced successfully',
+  success: true
+}

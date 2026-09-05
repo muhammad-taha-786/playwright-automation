@@ -1,0 +1,7 @@
+LOGOUT STATUS: 200
+LOGOUT RESPONSE: {
+  statusCode: 200,
+  data: {},
+  message: 'User logged out',
+  success: true
+}

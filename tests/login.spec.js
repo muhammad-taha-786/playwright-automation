@@ -1,5 +1,5 @@
 import { test, expect } from '../fixtures/testSetup.js';
-import loginData from '../testdata/logintestData.json' assert { type: 'json' };
+import loginData from '../testdata/LogintestData.json' assert { type: 'json' };
 import LoginPage from '../Pages/LoginPage.js';
 import { attachStepScreenshot } from '../utilities/screenshots.js';
 

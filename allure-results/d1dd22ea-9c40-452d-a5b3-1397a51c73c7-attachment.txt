@@ -1,0 +1,15 @@
+CURRENT USER STATUS: 200
+CURRENT USER RESPONSE: {
+  statusCode: 200,
+  data: {
+    _id: '6a9a73a734868b111454c44b',
+    username: 'taha1788507049155',
+    email: 'taha1788507049155@gmail.com',
+    fullname: 'Muhammad Taha',
+    createdAt: '2026-09-04T07:30:47.340Z',
+    updatedAt: '2026-09-04T07:30:48.618Z',
+    __v: 0
+  },
+  message: 'Current user fetched successfully',
+  success: true
+}

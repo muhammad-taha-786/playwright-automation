@@ -1,0 +1,15 @@
+REGISTER STATUS: 201
+REGISTER RESPONSE: {
+  statusCode: 201,
+  data: {
+    _id: '6a9a74563757f747feb2e983',
+    username: 'taha1788507224719',
+    email: 'taha1788507224719@gmail.com',
+    fullname: 'Muhammad Taha',
+    createdAt: '2026-09-04T07:33:42.726Z',
+    updatedAt: '2026-09-04T07:33:42.726Z',
+    __v: 0
+  },
+  message: 'User registered Successfully',
+  success: true
+}
